@@ -1,13 +1,13 @@
-import React, { isValidElement, cloneElement, Children, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
-import styled, { keyframes, css, useTheme, createGlobalStyle } from 'styled-components';
-import { space, typography, variant as variant$1, layout, background, border, position, flexbox } from 'styled-system';
+import debounce from 'lodash/debounce';
 import get from 'lodash/get';
 import noop from 'lodash/noop';
-import debounce from 'lodash/debounce';
-import { usePopper } from 'react-popper';
 import throttle from 'lodash/throttle';
+import React, { Children, cloneElement, createContext, isValidElement, useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import { usePopper } from 'react-popper';
 import { Link as Link$1, NavLink, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import styled, { createGlobalStyle, css, keyframes, useTheme } from 'styled-components';
+import { background, border, flexbox, layout, position, space, typography, variant as variant$1 } from 'styled-system';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -4002,7 +4002,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#935bfe", borderColor: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
