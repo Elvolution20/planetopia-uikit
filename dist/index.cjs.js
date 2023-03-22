@@ -503,11 +503,8 @@ var Icon$11 = function (props) {
 };
 
 var Icon$10 = function (props) {
-    return (
-        <Svg viewBox="0 0 32 32" {...props}>
-          <image href="./Image/planetopia.svg" width="32" height="32" />
-        </Svg>
-    );
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
+        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/logo.svg" })));
 };
 
 var Icon$$ = function (props) {
@@ -3032,11 +3029,8 @@ var Icon$i = function (props) {
 };
 
 var Logo$2 = function (props) {
-    return (    
-        <Svg viewBox="0 0 32 32" {...props}>
-            <image href="./Image/planetopia.svg" width="32" height="32" />
-        </Svg>
- );
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
+    React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/logo.svg" })));
 };
 
 var Icon$h = function (props) {
@@ -3146,7 +3140,7 @@ var StyledLink = styled__default['default'](reactRouterDom.Link)(templateObject_
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, blink);
-var Logo = function (_a) {
+var Logo$1 = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
@@ -3156,7 +3150,6 @@ var Logo = function (_a) {
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Planetopia home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
-var Logo$1 = React__default['default'].memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$d, templateObject_2$6;
 
 var status = {
