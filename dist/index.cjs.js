@@ -3108,7 +3108,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     IfoIcon: Icon$k,
     InfoIcon: Icon$j,
     LanguageIcon: Icon$i,
-    LogoIcon: LogoWithText,
+    LogoIcon: Logo$2,
     MoonIcon: Icon$h,
     MoreIcon: Icon$g,
     NftIcon: Icon$f,
