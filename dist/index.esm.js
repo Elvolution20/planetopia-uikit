@@ -490,8 +490,8 @@ var Icon$11 = function (props) {
 };
 
 var Icon$10 = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/logo.svg" })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
+        React.createElement("image", { width: "32", height: "32", href: "/images/logo.svg" })));
 };
 
 var Icon$$ = function (props) {
@@ -3016,8 +3016,8 @@ var Icon$i = function (props) {
 };
 
 var Logo$2 = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/logo.svg" })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
+        React.createElement("image", { width: "205", height: "26", href: "/images/logo.svg" })));
 };
 
 var Icon$h = function (props) {
